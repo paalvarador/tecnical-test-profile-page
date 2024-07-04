@@ -29,3 +29,9 @@ a {
   margin: 0 auto;
   padding: 2rem;
 }
+
+.icon_caption {
+  width: 30px;
+  height: 30px;
+  margin: 0 1rem 0 0;
+}

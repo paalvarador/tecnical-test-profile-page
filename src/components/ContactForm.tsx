@@ -2,8 +2,18 @@
 
 import React, { FormEvent, use, useState } from "react";
 import styles from "@/styles/ContactForm.module.css";
+import { IconDefinition } from "@fortawesome/fontawesome-svg-core";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
-const ContactForm = () => {
+interface ContactFormProps {
+  icon: IconDefinition;
+  title: string;
+}
+
+const ContactForm: React.FC<ContactFormProps> = ({
+  icon,
+  title,
+}: ContactFormProps) => {
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -25,7 +35,10 @@ const ContactForm = () => {
 
   return (
     <section className={styles.contact}>
-      <h2>Contacto</h2>
+      <h2>
+        <FontAwesomeIcon icon={icon} className="icon_caption" />
+        {title}
+      </h2>
       {submitted ? (
         <p>¡Mensaje enviado con éxito!</p>
       ) : (

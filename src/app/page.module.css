@@ -4,13 +4,16 @@
 }
 
 .profile_container_left {
-  border: 1px solid red;
+  border-right: 1px solid rgba(0, 0, 0, 0.06);
   min-width: 350px;
 }
 
 @media screen and (max-width: 768px) {
   .main {
-    border: 1px solid blue;
     flex-direction: column;
+  }
+
+  .profile_container_left {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.06);
   }
 }
