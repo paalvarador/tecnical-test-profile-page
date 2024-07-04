@@ -1,0 +1,28 @@
+.interests {
+  padding: 2rem;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin: 2rem 1rem;
+  transition: all 0.5s ease-in-out;
+}
+
+.interests:hover {
+  transform: translateY(-5px);
+}
+
+.interests h2 {
+  font-size: 1.75rem;
+  color: #555;
+}
+
+.interests ul {
+  list-style: none;
+  padding: 0;
+}
+
+.interests li {
+  font-size: 1rem;
+  color: #666;
+  margin-bottom: 0.5rem;
+}
